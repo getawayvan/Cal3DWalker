@@ -1,0 +1,31 @@
+<Cal3DConfig>
+    <Skeleton name="arthur" scale="0.52" x="0" y="-1" filename="Arthur.CSF" filepath="../assets/Arthur"/>
+
+    <Model skeleton="arthur">
+        <Meshes path="cmfc">
+            <Mesh name="arthur_msh"       append="1"   texture="arthur_tex" filename="Arthur_Green_Shorts.CMF"/>
+            <Mesh name="arthur_half_msh"  append="0"   texture="arthur_tex" filename="Arthur_Green_Shorts_Halfed.CMF"/>
+        </Meshes>
+        <Items path="cmfi">
+            <Item name="umbrella"       append="0"  texture="items_tex" filename="Arthur_Umbrella.CMF"/>
+        </Items>
+        <Materials path="crf">
+        </Materials>
+        <Textures path="tex">
+            <Texture name="arthur_tex"  filename="Arthur_Green_Shorts_Diffuse.png"/>
+            <Texture name="items_tex"   filename="Items_Diffuse.png"/>
+        </Textures>
+        <Cycles path="cafc">
+            <Cycle name="idle"    speed="0"       blend="0.5"     filename="Male_Idle.CAF"/>
+            <Cycle name="jog"     speed="2.2"     blend="0.5"     filename="Male_Jogging.CAF"/>
+            <Cycle name="run"     speed="5.3"     blend="0.5"     filename="Male_Running.CAF"/>
+            <Cycle name="sit"     speed="0"       blend="0.5"     filename="Male_Sitting.CAF"/>
+            <Cycle name="walk"    speed="0.9"     blend="0.5"     filename="Male_Walking.CAF"/>
+        </Cycles>
+        <Actions path="cafa">
+            <Action name="arms_cross"     blend="0.5"                            filename="Male_BothArms_Crossed.CAF"/>
+            <Action name="nodding_head"   blend="0.5"                            filename="Male_Head_Nodding.CAF"/>
+            <Action name="umbrella"       blend="0.5"     mesh="umbrella"        filename="Male_RightArm_CarryingUmbrella.CAF"/>
+        </Actions>
+    </Model>
+</Cal3DConfig>
